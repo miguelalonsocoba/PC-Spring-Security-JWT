@@ -69,7 +69,6 @@
 			<version>0.12.6</version>
 		</dependency>
 		<dependency>
-			<!-- Dependencia necesario para poder realizar login con exito en postman -->
 			<groupId>javax.xml.bind</groupId>
 			<artifactId>jaxb-api</artifactId>
 			<version>2.4.0-b180830.0359</version>
