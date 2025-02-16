@@ -30,7 +30,7 @@ public class User {
     // We use fetchType in EAGER so that every time a user is accessed or extracted from the DB, it retrieves all its roles.
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     /* With JoinTable we will be creating a table that will join the Users and Roles tables, so we will have a total of 3 related tables
-    in the table Users_Roles, through its columns id_users that will point to the ID of the table Users and id_roles that will point to the ID of the table Roles.*/
+    in the table Users_Roles, through its columns id_users that will point to the Id of the table Users and id_roles that will point to the Id of the table Roles.*/
     @JoinTable(name = "users_roles",
             joinColumns = @JoinColumn(name = "id_users", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "id_roles", referencedColumnName = "id"))
